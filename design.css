@@ -1,0 +1,167 @@
+body {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	margin: 0;
+	height: 100vh;
+}
+/* Image d'entête */
+.image {
+	background-size: cover;
+	height: 150px;
+	background-position: center center;
+	opacity: 0.5;
+	filter: grayscale(100%);
+	margin-bottom: 5px;
+}
+.image img {
+	display: none;
+}
+
+.text_in_image {
+	position: relative;
+}
+.text_in_image > h2 {
+	position: absolute;
+	color: red;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2rem;
+}
+/* Les 3 colonnes du corps de la page */
+.container {
+	display: flex;
+}
+.middle_block {
+	width: 60%;
+}
+.left_block,
+.right_block {
+	width: 20%;
+}
+
+.content {
+	text-align: justify;
+	margin: 20px;
+}
+
+.navig,
+.badge,
+.title,
+.subtitle {
+	text-align: center;
+	color: red;
+}
+
+/* Barre de navigation */
+.navig {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+.submenu {
+	margin-top: 10px;
+}
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+.navig ul {
+	display: flex;
+	padding-inline-start: 0px;
+}
+.menu > a,
+.submenu a {
+	color: blue;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+.menu > a {
+	padding: 10px;
+}
+
+.menu > a:hover {
+	background-color: red;
+	color: white;
+	border-bottom: solid blue 2px;
+}
+
+.navig ul li ul {
+	position: absolute;
+	text-align: left;
+	display: none;
+}
+.submenu {
+	flex-direction: column;
+}
+
+.submenu li {
+	padding: 10px;
+	width: 150px;
+	background-color: rgba(255, 255, 255, 0.849);
+}
+.submenu li:first-child {
+	margin-top: 5px;
+}
+.submenu li:hover {
+	background-color: red;
+	border-left: solid 2px blue;
+}
+
+.submenu li:hover > a {
+	color: white;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+	display: block;
+}
+
+/* Ecusson */
+.badge > img {
+	margin: 30px;
+	width: 150px;
+}
+
+/* Footer de la page */
+footer {
+	text-align: center;
+}
+/* Spécifique à About page */
+.title_about,
+.subtitle_about,
+.title_bars,
+.subtitle_bars,
+.about_photo {
+	color: red;
+	margin: 20px;
+}
+.about_photo {
+	display: flex;
+	justify-content: center;
+}
+
+.about_photo > img {
+	width: 100%;
+}
+
+/* Menu de gauche (arrondissements) */
+
+.menu_restaurants {
+	display: flex;
+	flex-wrap: wrap;
+}
+.left_menu a:hover {
+	background-color: red;
+	color: white;
+}
+
+.left_menu > li {
+	margin: 10px;
+}
+
+.left_menu > a {
+	padding: 2px 40px 2px 5px;
+}
